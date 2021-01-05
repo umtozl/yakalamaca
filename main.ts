@@ -5,7 +5,7 @@ basic.forever(function () {
     char = game.createSprite(2, 2)
     while (true) {
         if (char.isTouching(run)) {
-            char.change(LedSpriteProperty.X, randint(0, 4))
+            run.change(LedSpriteProperty.X, randint(0, 4))
             run.change(LedSpriteProperty.Y, randint(0, 4))
         }
         if (input.acceleration(Dimension.Y) > 0) {
